@@ -1,5 +1,6 @@
 
 @import 'global';
+@import 'reset';
 @import 'vars';
 @import 'fonts';
 //---------------------------
@@ -11,6 +12,16 @@
 
 body {
 background-color: rgb(222, 222, 222);
+}
+// --------------------------- header__inner ----------------
+.header__inner {
+ width: 100%;
+ background-image: url(../images/fon.jpeg);
+ width: 100%;
+ height: 200px;
+ top: 0;
+ z-index: -1;
+ 
 }
 // ----------------------- ------------ -----------------------
 .box {
@@ -55,9 +66,9 @@ background-color: rgb(222, 222, 222);
  display: grid;
  grid-template-columns: repeat(5, 1fr);
  grid-template-rows: repeat(6, 1fr);
- grid-gap: 50px;
+ grid-gap: 10px 40px;
  max-width: 1000px;
- max-height: 500px;
+ max-height: 600px;
  margin: 0 auto;
  &__item {
   text-align: justify;
@@ -92,9 +103,20 @@ background-color: rgb(222, 222, 222);
  &__item:nth-child(5) {
    grid-column: span 2;
    grid-row: span 2;
+   border-top: 1px solid #000;
   }
  &__item:nth-child(6) {
    grid-column: span 3;
    grid-row: span 2;
+   border-top: 1px solid #000;
   }
+}
+
+// ----------------- ----------footer--------------
+.footer {
+ margin-top: 100px;
+ width: 100%;
+ background-image: url(../images/fon.jpeg);
+ height: 400px;
+ z-index: -1;
 }
